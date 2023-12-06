@@ -1,0 +1,17 @@
+
+https://github.com/looselytyped/terraform-workshop
+
+https://www.manning.com/books/terraform-in-action
+https://www.oreilly.com/library/view/terraform-up-and/9781098116736
+
+Terraform workshop
+-------------------
+
+$ terraform init
+
+$ terraform apply
+
+$ terraform destroy
+
+
+
