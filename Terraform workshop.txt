@@ -13,5 +13,34 @@ $ terraform apply
 
 $ terraform destroy
 
+          RPC
+Terraform ---> providers plugin (compiler)
+                  |
+                  | Golang
+                  |       HTTP
+               Client sdk ----> Cloud Provider
+
+
+# contains terraform settings
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
+    aws = {
+      # shorthand for registry, terraform.io/hashicorp/aws
+      source = "hashicorp/aws"
+      version = "~>3.0"
+    }
+  }
+}
+
+# block configures the aws provider 
+provider "aws" {
+  region = "us-east-1"
+  profile = "default"
+}
+
+
+Terraform looks only in the directory it runs.
+
 
 
