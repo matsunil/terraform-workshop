@@ -62,6 +62,34 @@ Refer to a different resource -> class_name.instance_name.parameter
 
 TF first establishes dependencies.
 
+Organization - One for one
+
+Terragrunt organizes TF files.
+
+Module template and use source path.
+
+
+- networking
+- services
+- storage
+
+
+Validate ->
+terraform fit
+terraform validate
+terraform plan
+tflint
+
+
+Test ->
+terratest
+deploy
+validate
+destroy
+checks (> 1.5)
+terraform tests (> 1.6)
+
+Use a sandbox env for integration tests.
 
 
 
