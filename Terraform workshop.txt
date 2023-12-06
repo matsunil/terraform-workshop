@@ -40,7 +40,28 @@ provider "aws" {
 }
 
 
+  tags = {
+    Terraform = true //pro-tip
+  }
+
 Terraform looks only in the directory it runs.
+
+Terraform state shows what happened the last time you ran Terraform.
+
+Any changes made on console will be overwritten next time script is run.
+
+Terraform script - source of truth.
+Tfstate matches resource name with arn
+
+Terraform script - today 
+Tfstate - past
+
+If something is in script, and in console, but not on tfstate -> update
+
+Refer to a different resource -> class_name.instance_name.parameter
+
+TF first establishes dependencies.
+
 
 
 
